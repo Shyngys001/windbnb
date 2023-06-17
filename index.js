@@ -32,7 +32,7 @@ function toggleColors() {
 
 function toDark() {
     const themeImage = document.querySelector('.theme');
-    themeImage.src = '/dark.b04c358c.png';
+    themeImage.src = 'dark.png';
     document.documentElement.style.setProperty("--white", "black");
     document.documentElement.style.setProperty("--black", "white");
     document.documentElement.style.setProperty("--red", "yellow");
