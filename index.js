@@ -11,17 +11,17 @@ window.addEventListener("load", (event) => {
 
 function toggleColors() {
     const themeImage = document.querySelector('.theme');
-    if (themeImage.src.includes('/dark.b04c358c.png')) {
+    if (themeImage.src.includes('dark.png')) {
       document.documentElement.style.setProperty("--white", "white");
       document.documentElement.style.setProperty("--black", "black");
       document.documentElement.style.setProperty("--red", "red");
       document.documentElement.style.setProperty("--grey", "$color-grey");
       document.documentElement.style.setProperty("--redd", "--redd");
 
-      themeImage.src = '/light.758fd574.png';
+      themeImage.src = 'light.png';
 
-    } else if (themeImage.src.includes('/light.758fd574.png')) {
-      themeImage.src = '/dark.b04c358c.png';
+    } else if (themeImage.src.includes('light.png')) {
+      themeImage.src = 'dark.png';
       document.documentElement.style.setProperty("--white", "black");
       document.documentElement.style.setProperty("--black", "white");
       document.documentElement.style.setProperty("--red", "yellow");
@@ -43,7 +43,7 @@ function toDark() {
   
 
 
-const options = document.getElementById('options');
+  const options = document.getElementById('options');
 const close = document.getElementById('close');
 const city = document.getElementById('city');
 let count1 = document.getElementById('count1');
@@ -188,6 +188,7 @@ function decrement2(){
         if (city == selectedCity[0] && country == selectedCity[1]) {
           card.style.display = 'block';
           options.style.display = 'none';
+
         } else {
           card.style.display = 'none'; 
         }
